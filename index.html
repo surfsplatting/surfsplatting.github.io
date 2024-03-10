@@ -50,6 +50,7 @@
 
     <link rel="stylesheet" href="assets/css/bog/dics.min.css">
     <script src="assets/js/bog/dics.min.js"></script>
+    <script src="assets/js/bog/video_comparison.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', domReady);
         function domReady() {
@@ -103,13 +104,13 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="./video/teaser_figure.mp4" type="video/mp4" />
-                </video>
+                <video class="video" width="100%" id="xyalias6" loop playsinline autoplay muted src="video/teaser.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+                <canvas height=0 class="videoMerge" id="xyalias6Merge"></canvas>
 			</div>
             <div class="col-md-8 col-md-offset-2">
                 <p class="text-center">
-                Rendered images and normals from 2D Gaussian Splatting.
+                2D Gaussian splatting allows accurate surface modeling and radiance field rendering. <br> 
+                Use the slider as the "splatter".
                 </p>
 			</div>
         </div>
