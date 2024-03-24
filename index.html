@@ -98,19 +98,25 @@
                             <h4><strong>Code</strong></h4>
                         </a>
                     </li>
+                    <li>
+                        <a href="https://surfsplatting.github.io/">
+                        <image src="assets/img/bog/colab.png" height="60px">
+                            <h4><strong>Demo</strong></h4>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <video class="video" width="100%" id="xyalias6" loop playsinline autoplay muted src="video/teaser.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
-                <canvas height=0 class="videoMerge" id="xyalias6Merge"></canvas>
+                <video class="video" width="100%" id="teaser" loop playsinline autoplay muted src="video/teaser.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+                <canvas height=0 class="videoMerge" id="teaserMerge"></canvas>
 			</div>
             <div class="col-md-8 col-md-offset-2">
                 <p class="text-center">
-                2D Gaussian splatting allows accurate surface modeling and radiance field rendering. <br> 
-                Use the slider as the "splatter".
+                2DGS adopts (a) 2D oriented disks as surface elements and allows (b) high-quality radiance fields with Gaussian Splatting. <br> 
+                <span style="color:#DF62D3; font-size: 18px;"><b>Use the slider as the "splatter"</b></span>
                 </p>
 			</div>
         </div>
@@ -155,34 +161,46 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2" id="demos">
+        <div class="row comp-margin">
+            <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Geometry Reconstruction
                 </h3>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2" id="demos">
-                <h4>
-                    3DGS (upper) V.S. Ours (below)
-                </h4>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    3DGS (upper) V.S. 2DGS (below)
+                </h4>
                 <div class="aspect-ratio-container">
                     <video class="responsive-video" controls autoplay loop muted>
                         <source src="./video/2dgs_vs_3dgs.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2" id="demos">
+            <div class="col-md-8 col-md-offset-2">
                 <h4>
                     Our textured mesh
                 </h4>
+                <div class="aspect-ratio-container">
+                    <video class="responsive-video" controls autoplay loop muted>
+                        <source src="./video/colored_mesh.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="row comp-margin">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Radiance Field Rendering
+                </h3>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    2DGS v.s. 3DGS
+                </h4>
+                <video class="video" id="comp1" loop playsinline autoplay muted src="video/comp_counter.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+                <canvas height=0 class="videoMerge" id="comp1Merge"></canvas>
             </div>
         </div>
         <div class="row">
