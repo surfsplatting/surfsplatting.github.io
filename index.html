@@ -93,16 +93,16 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://surfsplatting.github.io/">
+                        <!-- <a href="https://surfsplatting.github.io/"> -->
                         <image src="assets/img/bog/github_pad.png" height="60px">
                             <h4><strong>Code</strong></h4>
-                        </a>
+                        <!-- </a> -->
                     </li>
                     <li>
-                        <a href="https://surfsplatting.github.io/">
+                        <!-- <a href="https://surfsplatting.github.io/"> -->
                         <image src="assets/img/bog/colab.png" height="60px">
                             <h4><strong>Demo</strong></h4>
-                        </a>
+                        <!-- </a> -->
                     </li>
                 </ul>
             </div>
@@ -187,6 +187,36 @@
                     </video>
                 </div>
             </div>
+            <div class="col-md-8 col-md-offset-2">
+                <table width="100%">
+                    <tr>
+                        <td align="left" valign="top" width="50%">
+                            <video id="v2" width="100%" controls playsinline autoplay loop muted>
+                                <source src="video/comp_barn_mesh.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="left" valign="top" width="50%">
+                            <video id="v3" width="100%" controls playsinline autoplay loop muted>
+                                <source src="video/comp_ignatius_mesh.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <tr>
+                        <td align="left" valign="top" width="50%">
+                            <video id="v2" width="100%" controls playsinline autoplay loop muted>
+                                <source src="video/comp_caterpillar_mesh.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="left" valign="top" width="50%">
+                            <video id="v3" width="100%" controls playsinline autoplay loop muted>
+                                <source src="video/comp_trunk_mesh.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="row comp-margin">
@@ -196,9 +226,26 @@
                 </h3>
             </div>
             <div class="col-md-8 col-md-offset-2">
-                <h4>
+                <h3>
                     2DGS v.s. 3DGS
-                </h4>
+                </h3>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <div style="overflow: hidden;">
+                    <video width="100%" playsinline autoplay loop muted style="margin-top: 0%;">
+                        <source src="video/comp_Ignatius.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <div style="overflow: hidden;">
+                    <video width="100%" playsinline autoplay loop muted style="margin-top: 0%;">
+                        <source src="video/comp_Caterpillar.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2">
                 <video class="video" id="comp1" loop playsinline autoplay muted src="video/comp_counter.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
                 <canvas height=0 class="videoMerge" id="comp1Merge"></canvas>
             </div>
