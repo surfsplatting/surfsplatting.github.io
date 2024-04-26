@@ -28,7 +28,7 @@
     <meta name="twitter:player:width" content="640">
     <meta name="twitter:player:height" content="360">
 
-    <link rel="icon" href="/splat.ico">
+    <link rel="icon" href="/paint.png">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -69,19 +69,49 @@
         <div class="row">
             <h2 class="col-md-12 text-center">
                 <b>2DGS</b>: 2D Gaussian Splatting <br> for Geometrically Accurate Radiance Fields </br>
-                <!--small>
-                    TODO: add venue once accepted
-                </small-->
+                <small>
+                    SIGGRAPH 2024
+                </small>
             </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=5da8iKwAAAAJ&hl=en">Binbin Huang</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <a href="https://niujinshuchong.github.io/">Zehao Yu</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <a href="https://apchenstu.github.io/">Anpei Chen</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <a href="http://www.cvlibs.net/">Andreas Geiger</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en">Shenghua Gao</a><sup>1</sup>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li><sup>1</sup>ShanghaiTech University</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><sup>2</sup>University of Tübingen</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><sup>3</sup>Tübingen AI Center</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                </ul>
+            </h5>
         </div>
 
 
         <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="col-md-6 col-md-offset-3 text-center">
                 <ul class="nav nav-pills nav-justified">
                     <li>
-                        <a
-                            href="assets/paper/paper.pdf">
+                        <a href="https://arxiv.org/abs/2403.17888">
                             <image src="assets/paper/paper.png"  height="60px">
                                 <h4><strong>Paper</strong></h4>
                         </a>
@@ -115,7 +145,7 @@
 			</div>
             <div class="col-md-8 col-md-offset-2">
                 <p class="text-center">
-                2DGS adopts (a) 2D oriented disks as surface elements and allows (b) high-quality radiance fields with Gaussian Splatting. <br> 
+                2DGS adopts (a) 2D oriented disks as surface elements and allows (b) high-quality rendering with gaussian splatting. <br> 
                 <span style="color:#DF62D3; font-size: 18px;"><b>Use the slider as the "splatter"</b></span>
                 </p>
 			</div>
@@ -226,11 +256,6 @@
                 </h3>
             </div>
             <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    2DGS v.s. 3DGS
-                </h3>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
                 <div style="overflow: hidden;">
                     <video width="100%" playsinline autoplay loop muted style="margin-top: 0%;">
                         <source src="video/comp_Ignatius.mp4" type="video/mp4" />
@@ -249,6 +274,23 @@
                 <video class="video" id="comp1" loop playsinline autoplay muted src="video/comp_counter.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
                 <canvas height=0 class="videoMerge" id="comp1Merge"></canvas>
             </div> -->
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <p>
+                    If you want to cite our work, please use:
+                </p>
+<pre style="font-size: 12px;">
+@article{Huang2DGS2024,
+    title={2D Gaussian Splatting for Geometrically Accurate Radiance Fields},
+    author={Huang, Binbin and Yu, Zehao and Chen, Anpei and Geiger, Andreas and Gao, Shenghua},
+    journal={SIGGRAPH},
+    year={2024}
+}</pre>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
